@@ -11,5 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "prisma": "^6.18.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }
