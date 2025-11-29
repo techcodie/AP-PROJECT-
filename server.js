@@ -6,6 +6,8 @@ let app = express();
 app.use(express.json());
 let prisma = new PrismaClient();
 
+app.use("/allotment" , require("./allotment-module/allotmentRoutes"));
+
 app.post("/signup", async (req, res) => {
   let name = req.body.user;
   let email = req.body.email;
